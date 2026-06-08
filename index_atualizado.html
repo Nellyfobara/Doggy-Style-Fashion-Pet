@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Doggy Style Fashion Pet</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--
+Uso da IA:
+A Inteligência Artificial ChatGPT foi utilizada como consultora técnica
+para auxiliar na definição do tema da empresa, escolha das cores,
+estruturação do conteúdo das seções HOME, SERVIÇOS / PRODUTOS, PARCEIROS e FAQ,
+além de auxiliar na criação do slideshow, estilização dos botões e correção dos códigos HTML e CSS.
+-->
+
+<nav class="w3-sidebar w3-bar-block sidebar">
+    <h3 class="w3-bar-item">Doggy Style</h3>
+
+    <a href="#home" class="w3-bar-item w3-button">
+        <i class="fa fa-house"></i> HOME
+    </a>
+
+    <a href="#servicos" class="w3-bar-item w3-button">
+        <i class="fa fa-bag-shopping"></i> SERVIÇOS / PRODUTOS
+    </a>
+
+    <a href="#parceiros" class="w3-bar-item w3-button">
+        <i class="fa fa-handshake"></i> PARCEIROS
+    </a>
+
+    <a href="#faq" class="w3-bar-item w3-button">
+        <i class="fa fa-circle-question"></i> FAQ
+    </a>
+</nav>
+
+<div class="main">
+
+    <!-- HOME -->
+
+    <section id="home" class="w3-container">
+
+        <header class="w3-center">
+
+            <img src="imagens/logo.png" class="logo" alt="Logo">
+
+            <h1>Doggy Style Fashion Pet</h1>
+
+            <h3>Estilo, conforto e carinho para seu melhor amigo</h3>
+
+            <img src="imagens/banner.png" class="banner" alt="Banner">
+
+     </header>
+
+        <div class="caixa">
+
+            <h2>Quem Somos</h2>
+
+            <p>
+                A Doggy Style Fashion Pet é uma empresa especializada em roupas para cães.
+                Trabalhamos com peças modernas, confortáveis e seguras para proporcionar
+                bem-estar e estilo aos pets.
+            </p>
+
+            <h2>Missão</h2>
+
+            <p>
+                Oferecer produtos de qualidade que garantam conforto, proteção e beleza
+                para os animais de estimação.
+            </p>
+
+            <h2>Visão</h2>
+
+            <p>
+                Tornar-se referência nacional em moda pet, oferecendo inovação e excelência.
+            </p>
+
+            <h2>Valores</h2>
+
+            <ul>
+                <li>Amor pelos animais</li>
+                <li>Qualidade</li>
+                <li>Respeito</li>
+                <li>Inovação</li>
+                <li>Comprometimento</li>
+            </ul>
+
+        </div>
+
+     </section>
+
+
+    <!-- SERVIÇOS / PRODUTOS -->
+
+    <section id="servicos" class="w3-container">
+
+        <div class="caixa">
+            <h2 class="w3-center">Serviços / Produtos</h2>
+
+            <p>
+                Conheça alguns produtos e serviços comercializados pela Doggy Style Fashion Pet.
+                </p>
+
+            <div class="slideshow-container">
+
+                <div class="slide fade">
+                    <img src="imagens/roupas.png" alt="Roupas para cães">
+                    <h3>Boutique Pet</h3>
+                    <p>Estilo e conforto para todas as ocasiões!</p>
+                </div>
+
+                <div class="slide fade">
+                    <img src="imagens/acessorios.png" alt="Acessórios para cães">
+                    <h3>Acessórios Pet</h3>
+                    <p>Tudo o que seu pet precisa com muito charme!</p>
+                </div>
+
+                <div class="slide fade">
+                    <img src="imagens/banho.png" alt="Banho e tosa">
+                    <h3>Banho e Tosa</h3>
+                    <p>Higiene, cuidado e bem-estar para manter o pet limpo, cheiroso e saudável!</p>
+                </div>
+
+                <button class="botao-slide anterior" onclick="mudarSlide(-1)">&#10094;</button>
+                <button class="botao-slide proximo" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="w3-center indicadores">
+                <span class="bolinha" onclick="slideAtual(1)"></span>
+                <span class="bolinha" onclick="slideAtual(2)"></span>
+                <span class="bolinha" onclick="slideAtual(3)"></span>
+            </div>
+        </div>
+   
+
+    </section>
+
+    <!-- PARCEIROS -->
+
+    <section id="parceiros" class="w3-container">
+
+        <h2 class="w3-center">Nossos Parceiros</h2>
+
+        <div class="parceiros">
+
+            <div class="card">
+                <img src="imagens/lazer.jpg" class="parceiro" alt="">
+                <h4>Pet Park Diversão</h4>
+
+                <p>Área de lazer para cães.</p>
+
+                <p><i class="fa fa-envelope"></i> contato@petpark.com.br</p>
+                <p><i class="fa fa-phone"></i> (11) 3333-1111</p>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://wa.me/5511999999999" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>            
+                </div>
+
+            <div class="card">
+                <img src="imagens/hotelzinho.jpg" class="parceiro" alt="">
+                <h4>Hotel Pet Feliz</h4>
+
+                <p>Hospedagem para pets.</p>
+
+                <p><i class="fa fa-envelope"></i> reservas@hotelpet.com.br</p>
+                <p><i class="fa fa-phone"></i> (11) 3333-2222</p>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://wa.me/5511999999999" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>            
+            </div>
+
+            <div class="card">
+                <img src="imagens/vitaminas.jpg" class="parceiro" alt="">
+                <h4>VitaPet</h4>
+
+                <p>Vitaminas e suplementos.</p>
+
+                <p><i class="fa fa-envelope"></i> atendimento@vitapet.com.br</p>
+                <p><i class="fa fa-phone"></i> (11) 3333-3333</p>
+
+               <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+               </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+               </a>
+
+                <a href="https://wa.me/5511999999999" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+               </a>            
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq" class="w3-container">
+
+
+        <div class="caixa">
+
+            <h2>Perguntas Frequentes</h2>
+
+            <p><strong>Como escolher o tamanho?</strong><br>
+            Consulte nossa tabela de medidas.</p>
+
+            <p><strong>Vocês entregam em todo o Brasil?</strong><br>
+            Sim, realizamos entregas para todas as regiões.</p>
+
+            <p><strong>Posso trocar um produto?</strong><br>
+            Sim, em até 7 dias após o recebimento.</p>
+
+            <p><strong>Quais formas de pagamento são aceitas?</strong><br>
+            Pix, boleto e cartão de crédito.</p>
+
+        </div>
+
+       <footer>
+
+    <p>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:contato@doggystylepet.com.br">
+            contato@doggystylepet.com.br
+        </a>
+    </p>
+
+    <p>
+        <i class="fa fa-phone"></i>
+        <a href="tel:+551140001234">
+            (11) 4000-1234
+        </a>
+    </p>
+
+    <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://wa.me/5511999999999" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</footer>
+    </section>
+
+</div>
+
+
+<script>
+let indiceSlide = 1;
+mostrarSlide(indiceSlide);
+
+function mudarSlide(n) {
+    mostrarSlide(indiceSlide += n);
+}
+
+function slideAtual(n) {
+    mostrarSlide(indiceSlide = n);
+}
+
+function mostrarSlide(n) {
+    let slides = document.getElementsByClassName("slide");
+    let bolinhas = document.getElementsByClassName("bolinha");
+
+    if (n > slides.length) {
+        indiceSlide = 1;
+    }
+
+    if (n < 1) {
+        indiceSlide = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < bolinhas.length; i++) {
+        bolinhas[i].className = bolinhas[i].className.replace(" ativo", "");
+    }
+
+    slides[indiceSlide - 1].style.display = "block";
+    bolinhas[indiceSlide - 1].className += " ativo";
+}
+</script>
+
+</body>
+</html>
+
